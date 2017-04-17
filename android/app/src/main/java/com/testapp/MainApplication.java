@@ -1,4 +1,4 @@
-package com.testapp;
+package com.testappdaffodil;
 
 import android.app.Application;
 import android.util.Log;
