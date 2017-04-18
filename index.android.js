@@ -13,15 +13,15 @@ let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
 
 class TestApp extends Component {
     onPress1 (){
-        var a = "5 ".trim();
+        var a = "hello ".trim();
         ToastAndroid.show(a,0);
     }
     onPress2 (){
-        var a = (5).toString().trim();
+        var a = (8).toString().trim();
         ToastAndroid.show(a,0);
     }
-    onPress2 (){
-        var a = (5).toString.trim();
+    onPress3 (){
+        var a = (3).toString.trim();
         ToastAndroid.show(a,0);
     }
 
