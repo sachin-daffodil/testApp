@@ -7,6 +7,9 @@ import {
     ToastAndroid,
     TouchableOpacity
 } from 'react-native';
+import codePush from "react-native-code-push";
+
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
 
 class TestApp extends Component {
     onPress1 (){
@@ -14,9 +17,14 @@ class TestApp extends Component {
         ToastAndroid.show(a,0);
     }
     onPress2 (){
-        var a = (5).trim();
+        var a = (5).toString().trim();
         ToastAndroid.show(a,0);
     }
+    onPress2 (){
+        var a = (5).toString.trim();
+        ToastAndroid.show(a,0);
+    }
+
 
     render() {
         return (
@@ -27,10 +35,16 @@ class TestApp extends Component {
                 <TouchableOpacity onPress={this.onPress2}>
                     <Text style={{borderWidth:1,padding:5,textAlign:"center"}}>Button2</Text>
                 </TouchableOpacity>
+                <TouchableOpacity onPress={this.onPress3}>
+                    <Text style={{borderWidth:1,padding:5,textAlign:"center"}}>Button3</Text>
+                </TouchableOpacity>
             </View>
         )
     }
 }
+
+
+TestApp = codePush(codePushOptions)(TestApp);
 
 
 AppRegistry.registerComponent('testApp', () => TestApp);
