@@ -103,8 +103,8 @@ android {
         applicationId "com.testappdaffodil"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 1.1
+        versionName "1.1"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -112,7 +112,7 @@ android {
     splits {
         abi {
             reset()
-            enable enableSeparateBuildPerCPUArchitecture
+            enable enableSeparateBuildPerCPUArchitecture0M5rxZm8yFsoh2DRII1ohW3yK03cN1ATXKRpf
             universalApk false  // If true, also generate a universal APK
             include "armeabi-v7a", "x86"
         }
