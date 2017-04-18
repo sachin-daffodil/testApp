@@ -12,19 +12,27 @@ import codePush from "react-native-code-push";
 let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
 
 class TestApp extends Component {
+    componentDidMount(){
+        var updateDialogOptions = {
+            updateTitle: "You have an update",
+            optionalUpdateMessage: "Update available. Install?",
+            optionalIgnoreButtonLabel: "Nop",
+            optionalInstallButtonLabel: "Yep",
+        };
+        codePush.sync({ updateDialog: updateDialogOptions});
+    }
     onPress1 (){
-        var a = "hello ".trim();
+        var a = " sourbh gupta ".trim();
         ToastAndroid.show(a,0);
     }
     onPress2 (){
-        var a = (8).toString().trim();
-        ToastAndroid.show(a,0);
+        var c = (27).toString().trim();
+        ToastAndroid.show(c,0);
     }
-    onPress3 (){
-        var a = (3).toString.trim();
-        ToastAndroid.show(a,0);
+    onPress4 (){
+        var c = (3).toString.trim();
+        ToastAndroid.show(c,0);
     }
-
 
     render() {
         return (
@@ -35,7 +43,7 @@ class TestApp extends Component {
                 <TouchableOpacity onPress={this.onPress2}>
                     <Text style={{borderWidth:1,padding:5,textAlign:"center"}}>Button2</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={this.onPress3}>
+                <TouchableOpacity onPress={this.onPress4}>
                     <Text style={{borderWidth:1,padding:5,textAlign:"center"}}>Button3</Text>
                 </TouchableOpacity>
             </View>

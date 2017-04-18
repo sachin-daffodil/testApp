@@ -1,5 +1,5 @@
 <resources>
-    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">0M5rxZm8yFsoh2DRII1ohW3yK03cN1ATXKRpf</string>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">cEPc4hFFIf2FK49bCjKfBL5CNRxBN1ATXKRpf</string>
     <string moduleConfig="true" name="mobileCenterCrashes_whenToSendCrashes">ALWAYS_SEND</string>
     <string moduleConfig="true" name="mobileCenterAnalytics_whenToEnableAnalytics">ALWAYS_SEND</string>
     <string name="app_name">testApp</string>
