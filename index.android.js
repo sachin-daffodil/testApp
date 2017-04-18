@@ -14,7 +14,7 @@ class TestApp extends Component {
         ToastAndroid.show(a,0);
     }
     onPress2 (){
-        var a = (5).toString().trim();
+        var a = (5).trim();
         ToastAndroid.show(a,0);
     }
 
